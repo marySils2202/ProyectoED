@@ -30,473 +30,632 @@ namespace ProyectoDS
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistro));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtUser = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtDireccionProveedor = new System.Windows.Forms.RichTextBox();
-            this.txtNombreProveedor = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dgMostrarProveedor = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._editar = new System.Windows.Forms.DataGridViewImageColumn();
-            this._eliminar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarProveedor)).BeginInit();
-            this.SuspendLayout();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            panel1 = new Panel();
+            txtCantidad = new TextBox();
+            groupBox4 = new GroupBox();
+            btnInicio = new Button();
+            label12 = new Label();
+            label9 = new Label();
+            textBox6 = new TextBox();
+            textBox7 = new TextBox();
+            label11 = new Label();
+            groupBox3 = new GroupBox();
+            rbColasCirculares = new RadioButton();
+            rbColasSimples = new RadioButton();
+            rbPilas = new RadioButton();
+            label4 = new Label();
+            textBox3 = new TextBox();
+            textBox5 = new TextBox();
+            groupBox2 = new GroupBox();
+            label7 = new Label();
+            pictureBox4 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            btnEliminar = new Button();
+            btnNuevo = new Button();
+            textBox8 = new TextBox();
+            textBox9 = new TextBox();
+            label13 = new Label();
+            label1 = new Label();
+            groupBox1 = new GroupBox();
+            dgEmpleados = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            txtApellido = new TextBox();
+            txtTelefono = new TextBox();
+            txtEdad = new TextBox();
+            txtNombre = new TextBox();
+            txtDireccion = new RichTextBox();
+            label8 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label3 = new Label();
+            pictureBox2 = new PictureBox();
+            comboBox2 = new ComboBox();
+            label10 = new Label();
+            txtUser = new TextBox();
+            txtPassword = new TextBox();
+            label2 = new Label();
+            pictureBox1 = new PictureBox();
+            panel1.SuspendLayout();
+            groupBox4.SuspendLayout();
+            groupBox3.SuspendLayout();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgEmpleados).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(243)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(-131, -61);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1063, 572);
-            this.panel1.TabIndex = 4;
+            panel1.BackColor = Color.FromArgb(242, 244, 243);
+            panel1.Controls.Add(txtCantidad);
+            panel1.Controls.Add(groupBox4);
+            panel1.Controls.Add(groupBox3);
+            panel1.Controls.Add(groupBox2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(groupBox1);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Location = new Point(-175, -94);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1783, 863);
+            panel1.TabIndex = 4;
+            // 
+            // txtCantidad
+            // 
+            txtCantidad.Location = new Point(524, 216);
+            txtCantidad.Margin = new Padding(4, 5, 4, 5);
+            txtCantidad.Name = "txtCantidad";
+            txtCantidad.Size = new Size(39, 27);
+            txtCantidad.TabIndex = 109;
+            // 
+            // groupBox4
+            // 
+            groupBox4.BackColor = Color.FromArgb(239, 239, 239);
+            groupBox4.Controls.Add(btnInicio);
+            groupBox4.Controls.Add(label12);
+            groupBox4.Controls.Add(label9);
+            groupBox4.Controls.Add(textBox6);
+            groupBox4.Controls.Add(textBox7);
+            groupBox4.Controls.Add(label11);
+            groupBox4.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox4.Location = new Point(206, 201);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(453, 48);
+            groupBox4.TabIndex = 110;
+            groupBox4.TabStop = false;
+            // 
+            // btnInicio
+            // 
+            btnInicio.Location = new Point(364, 15);
+            btnInicio.Name = "btnInicio";
+            btnInicio.Size = new Size(74, 29);
+            btnInicio.TabIndex = 111;
+            btnInicio.Text = "Inicio";
+            btnInicio.UseVisualStyleBackColor = true;
+            btnInicio.Click += btnInicio_Click;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.FromArgb(242, 244, 243);
+            label12.Location = new Point(0, 19);
+            label12.Name = "label12";
+            label12.Size = new Size(312, 21);
+            label12.TabIndex = 110;
+            label12.Text = "Cantidad de empleados a registrar:";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.FromArgb(242, 244, 243);
+            label9.Location = new Point(599, 106);
+            label9.Name = "label9";
+            label9.Size = new Size(0, 21);
+            label9.TabIndex = 99;
+            // 
+            // textBox6
+            // 
+            textBox6.BorderStyle = BorderStyle.None;
+            textBox6.Font = new Font("Century Gothic", 12.22642F);
+            textBox6.Location = new Point(1103, 45);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(203, 25);
+            textBox6.TabIndex = 29;
+            // 
+            // textBox7
+            // 
+            textBox7.BorderStyle = BorderStyle.None;
+            textBox7.Font = new Font("Century Gothic", 12.22642F);
+            textBox7.Location = new Point(1103, 102);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(219, 25);
+            textBox7.TabIndex = 23;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.FromArgb(242, 244, 243);
+            label11.Location = new Point(11, 46);
+            label11.Name = "label11";
+            label11.Size = new Size(0, 21);
+            label11.TabIndex = 1;
+            // 
+            // groupBox3
+            // 
+            groupBox3.BackColor = Color.FromArgb(239, 239, 239);
+            groupBox3.Controls.Add(rbColasCirculares);
+            groupBox3.Controls.Add(rbColasSimples);
+            groupBox3.Controls.Add(rbPilas);
+            groupBox3.Controls.Add(label4);
+            groupBox3.Controls.Add(textBox3);
+            groupBox3.Controls.Add(textBox5);
+            groupBox3.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox3.Location = new Point(206, 255);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(453, 173);
+            groupBox3.TabIndex = 110;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Estructuras Lineales";
+            // 
+            // rbColasCirculares
+            // 
+            rbColasCirculares.AutoSize = true;
+            rbColasCirculares.Location = new Point(21, 126);
+            rbColasCirculares.Name = "rbColasCirculares";
+            rbColasCirculares.Size = new Size(164, 25);
+            rbColasCirculares.TabIndex = 102;
+            rbColasCirculares.TabStop = true;
+            rbColasCirculares.Text = "Colas Circulares";
+            rbColasCirculares.UseVisualStyleBackColor = true;
+            // 
+            // rbColasSimples
+            // 
+            rbColasSimples.AutoSize = true;
+            rbColasSimples.Location = new Point(23, 84);
+            rbColasSimples.Name = "rbColasSimples";
+            rbColasSimples.Size = new Size(142, 25);
+            rbColasSimples.TabIndex = 101;
+            rbColasSimples.TabStop = true;
+            rbColasSimples.Text = "Colas Simples";
+            rbColasSimples.UseVisualStyleBackColor = true;
+            // 
+            // rbPilas
+            // 
+            rbPilas.AutoSize = true;
+            rbPilas.Location = new Point(23, 42);
+            rbPilas.Name = "rbPilas";
+            rbPilas.Size = new Size(66, 25);
+            rbPilas.TabIndex = 100;
+            rbPilas.TabStop = true;
+            rbPilas.Text = "Pilas";
+            rbPilas.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.FromArgb(242, 244, 243);
+            label4.Location = new Point(599, 106);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 21);
+            label4.TabIndex = 99;
+            // 
+            // textBox3
+            // 
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox3.Font = new Font("Century Gothic", 12.22642F);
+            textBox3.Location = new Point(1103, 45);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(203, 25);
+            textBox3.TabIndex = 29;
+            // 
+            // textBox5
+            // 
+            textBox5.BorderStyle = BorderStyle.None;
+            textBox5.Font = new Font("Century Gothic", 12.22642F);
+            textBox5.Location = new Point(1103, 102);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(219, 25);
+            textBox5.TabIndex = 23;
+            // 
+            // groupBox2
+            // 
+            groupBox2.BackColor = Color.FromArgb(239, 239, 239);
+            groupBox2.Controls.Add(label7);
+            groupBox2.Controls.Add(pictureBox4);
+            groupBox2.Controls.Add(pictureBox9);
+            groupBox2.Controls.Add(btnEliminar);
+            groupBox2.Controls.Add(btnNuevo);
+            groupBox2.Controls.Add(textBox8);
+            groupBox2.Controls.Add(textBox9);
+            groupBox2.Controls.Add(label13);
+            groupBox2.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox2.Location = new Point(678, 228);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(228, 200);
+            groupBox2.TabIndex = 109;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Pilas";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.FromArgb(242, 244, 243);
+            label7.Location = new Point(599, 106);
+            label7.Name = "label7";
+            label7.Size = new Size(0, 21);
+            label7.TabIndex = 99;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.FromArgb(146, 180, 167);
+            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
+            pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox4.Location = new Point(33, 133);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(40, 36);
+            pictureBox4.TabIndex = 62;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.FromArgb(146, 180, 167);
+            pictureBox9.BackgroundImage = (Image)resources.GetObject("pictureBox9.BackgroundImage");
+            pictureBox9.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox9.Location = new Point(30, 51);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(43, 43);
+            pictureBox9.TabIndex = 60;
+            pictureBox9.TabStop = false;
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.BackColor = Color.FromArgb(146, 180, 167);
+            btnEliminar.FlatAppearance.BorderSize = 0;
+            btnEliminar.FlatStyle = FlatStyle.Flat;
+            btnEliminar.Font = new Font("Arial Rounded MT Bold", 11.89565F);
+            btnEliminar.ForeColor = Color.White;
+            btnEliminar.Location = new Point(21, 124);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.RightToLeft = RightToLeft.Yes;
+            btnEliminar.Size = new Size(157, 60);
+            btnEliminar.TabIndex = 58;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.TextAlign = ContentAlignment.MiddleLeft;
+            btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
+            // 
+            // btnNuevo
+            // 
+            btnNuevo.BackColor = Color.FromArgb(146, 180, 167);
+            btnNuevo.FlatAppearance.BorderSize = 0;
+            btnNuevo.FlatStyle = FlatStyle.Flat;
+            btnNuevo.Font = new Font("Arial Rounded MT Bold", 11.89565F);
+            btnNuevo.ForeColor = Color.White;
+            btnNuevo.Location = new Point(21, 40);
+            btnNuevo.Name = "btnNuevo";
+            btnNuevo.Size = new Size(157, 65);
+            btnNuevo.TabIndex = 56;
+            btnNuevo.Text = "Nuevo";
+            btnNuevo.TextAlign = ContentAlignment.MiddleRight;
+            btnNuevo.UseVisualStyleBackColor = false;
+            btnNuevo.Click += button8_Click;
+            // 
+            // textBox8
+            // 
+            textBox8.BorderStyle = BorderStyle.None;
+            textBox8.Font = new Font("Century Gothic", 12.22642F);
+            textBox8.Location = new Point(1103, 45);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(203, 25);
+            textBox8.TabIndex = 29;
+            // 
+            // textBox9
+            // 
+            textBox9.BorderStyle = BorderStyle.None;
+            textBox9.Font = new Font("Century Gothic", 12.22642F);
+            textBox9.Location = new Point(1103, 102);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(219, 25);
+            textBox9.TabIndex = 23;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.BackColor = Color.FromArgb(242, 244, 243);
+            label13.Location = new Point(11, 46);
+            label13.Name = "label13";
+            label13.Size = new Size(0, 21);
+            label13.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.91304F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(440, 100);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nuevo Empleado";
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 21.91304F, FontStyle.Bold);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(875, 155);
+            label1.Name = "label1";
+            label1.Size = new Size(330, 44);
+            label1.TabIndex = 0;
+            label1.Text = "Nuevo Empleado";
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.groupBox1.Controls.Add(this.dgMostrarProveedor);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.txtNombreProveedor);
-            this.groupBox1.Controls.Add(this.txtDireccionProveedor);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.pictureBox7);
-            this.groupBox1.Controls.Add(this.pictureBox6);
-            this.groupBox1.Controls.Add(this.pictureBox5);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.txtUser);
-            this.groupBox1.Controls.Add(this.txtPassword);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(142, 170);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(778, 381);
-            this.groupBox1.TabIndex = 12;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos del Empleado";
+            groupBox1.BackColor = Color.FromArgb(239, 239, 239);
+            groupBox1.Controls.Add(dgEmpleados);
+            groupBox1.Controls.Add(txtApellido);
+            groupBox1.Controls.Add(txtTelefono);
+            groupBox1.Controls.Add(txtEdad);
+            groupBox1.Controls.Add(txtNombre);
+            groupBox1.Controls.Add(txtDireccion);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(pictureBox2);
+            groupBox1.Controls.Add(comboBox2);
+            groupBox1.Controls.Add(label10);
+            groupBox1.Controls.Add(txtUser);
+            groupBox1.Controls.Add(txtPassword);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox1.Location = new Point(199, 443);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(753, 399);
+            groupBox1.TabIndex = 12;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Datos del Empleado";
             // 
-            // button5
+            // dgEmpleados
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(180)))), ((int)(((byte)(167)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.89565F);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(613, 159);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button5.Size = new System.Drawing.Size(140, 27);
-            this.button5.TabIndex = 94;
-            this.button5.Text = "Guardar";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(243)))));
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(334, 150);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(54, 37);
-            this.pictureBox2.TabIndex = 67;
-            this.pictureBox2.TabStop = false;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 12.22642F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(113, 158);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(197, 29);
-            this.comboBox2.TabIndex = 66;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(243)))));
-            this.label10.Location = new System.Drawing.Point(17, 159);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 17);
-            this.label10.TabIndex = 65;
-            this.label10.Text = "Buscar por:";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(180)))), ((int)(((byte)(167)))));
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Location = new System.Drawing.Point(279, 342);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(43, 29);
-            this.pictureBox7.TabIndex = 62;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(180)))), ((int)(((byte)(167)))));
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(144, 343);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(42, 29);
-            this.pictureBox6.TabIndex = 61;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(180)))), ((int)(((byte)(167)))));
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(18, 342);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(43, 29);
-            this.pictureBox5.TabIndex = 60;
-            this.pictureBox5.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(180)))), ((int)(((byte)(167)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.89565F);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(270, 338);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button3.Size = new System.Drawing.Size(130, 39);
-            this.button3.TabIndex = 58;
-            this.button3.Text = "Eliminar";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(180)))), ((int)(((byte)(167)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.89565F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(139, 338);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 40);
-            this.button2.TabIndex = 57;
-            this.button2.Text = "Editar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(180)))), ((int)(((byte)(167)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.89565F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(11, 335);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 42);
-            this.button1.TabIndex = 56;
-            this.button1.Text = "Nuevo";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // txtUser
-            // 
-            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUser.Font = new System.Drawing.Font("Century Gothic", 12.22642F);
-            this.txtUser.Location = new System.Drawing.Point(827, 29);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(152, 20);
-            this.txtUser.TabIndex = 29;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12.22642F);
-            this.txtPassword.Location = new System.Drawing.Point(827, 66);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(164, 20);
-            this.txtPassword.TabIndex = 23;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(243)))));
-            this.label2.Location = new System.Drawing.Point(8, 30);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(288, 67);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(148, 99);
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(243)))));
-            this.label3.Location = new System.Drawing.Point(389, 30);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 17);
-            this.label3.TabIndex = 95;
-            this.label3.Text = "Apellido";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(243)))));
-            this.label5.Location = new System.Drawing.Point(389, 65);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 17);
-            this.label5.TabIndex = 97;
-            this.label5.Text = "Teléfono";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(243)))));
-            this.label6.Location = new System.Drawing.Point(389, 105);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 17);
-            this.label6.TabIndex = 99;
-            this.label6.Text = "Edad";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(243)))));
-            this.label8.Location = new System.Drawing.Point(8, 67);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 17);
-            this.label8.TabIndex = 102;
-            this.label8.Text = "Dirección";
-            // 
-            // txtDireccionProveedor
-            // 
-            this.txtDireccionProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDireccionProveedor.Location = new System.Drawing.Point(95, 67);
-            this.txtDireccionProveedor.Name = "txtDireccionProveedor";
-            this.txtDireccionProveedor.Size = new System.Drawing.Size(220, 71);
-            this.txtDireccionProveedor.TabIndex = 103;
-            this.txtDireccionProveedor.Text = "";
-            // 
-            // txtNombreProveedor
-            // 
-            this.txtNombreProveedor.Location = new System.Drawing.Point(95, 27);
-            this.txtNombreProveedor.Name = "txtNombreProveedor";
-            this.txtNombreProveedor.Size = new System.Drawing.Size(220, 23);
-            this.txtNombreProveedor.TabIndex = 104;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(476, 111);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(220, 23);
-            this.textBox4.TabIndex = 105;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(476, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 23);
-            this.textBox1.TabIndex = 106;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(476, 26);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(220, 23);
-            this.textBox2.TabIndex = 107;
-            // 
-            // dgMostrarProveedor
-            // 
-            this.dgMostrarProveedor.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgMostrarProveedor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgMostrarProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgMostrarProveedor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgMostrarProveedor.BackgroundColor = System.Drawing.Color.White;
-            this.dgMostrarProveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgMostrarProveedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this._editar,
-            this._eliminar});
-            this.dgMostrarProveedor.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(73)))));
-            this.dgMostrarProveedor.Location = new System.Drawing.Point(20, 212);
-            this.dgMostrarProveedor.Name = "dgMostrarProveedor";
-            this.dgMostrarProveedor.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgMostrarProveedor.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(209)))), ((int)(((byte)(212)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lucida Bright", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.dgMostrarProveedor.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgMostrarProveedor.Size = new System.Drawing.Size(733, 100);
-            this.dgMostrarProveedor.TabIndex = 108;
+            dgEmpleados.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dgEmpleados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgEmpleados.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgEmpleados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgEmpleados.BackgroundColor = Color.White;
+            dgEmpleados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgEmpleados.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
+            dgEmpleados.GridColor = Color.FromArgb(0, 50, 73);
+            dgEmpleados.Location = new Point(30, 236);
+            dgEmpleados.Margin = new Padding(4, 5, 4, 5);
+            dgEmpleados.Name = "dgEmpleados";
+            dgEmpleados.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgEmpleados.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgEmpleados.RowHeadersWidth = 51;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(154, 209, 212);
+            dataGridViewCellStyle3.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dgEmpleados.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dgEmpleados.Size = new Size(648, 132);
+            dgEmpleados.TabIndex = 108;
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "Nombre";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            Column1.HeaderText = "Nombre";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Apellido";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            Column2.HeaderText = "Apellido";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Teléfono";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
+            Column3.HeaderText = "Teléfono";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "Dirección";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
+            Column4.HeaderText = "Dirección";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "Edad";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
+            Column5.HeaderText = "Edad";
+            Column5.MinimumWidth = 6;
+            Column5.Name = "Column5";
+            Column5.ReadOnly = true;
             // 
-            // _editar
+            // txtApellido
             // 
-            this._editar.DataPropertyName = "_editar";
-            this._editar.HeaderText = "Editar";
-            this._editar.Name = "_editar";
-            this._editar.ReadOnly = true;
+            txtApellido.Location = new Point(356, 42);
+            txtApellido.Margin = new Padding(4, 5, 4, 5);
+            txtApellido.Name = "txtApellido";
+            txtApellido.Size = new Size(104, 27);
+            txtApellido.TabIndex = 107;
             // 
-            // _eliminar
+            // txtTelefono
             // 
-            this._eliminar.HeaderText = "Eliminar";
-            this._eliminar.Name = "_eliminar";
-            this._eliminar.ReadOnly = true;
+            txtTelefono.Location = new Point(581, 40);
+            txtTelefono.Margin = new Padding(4, 5, 4, 5);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(97, 27);
+            txtTelefono.TabIndex = 106;
+            // 
+            // txtEdad
+            // 
+            txtEdad.Location = new Point(581, 100);
+            txtEdad.Margin = new Padding(4, 5, 4, 5);
+            txtEdad.Name = "txtEdad";
+            txtEdad.Size = new Size(97, 27);
+            txtEdad.TabIndex = 105;
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new Point(127, 42);
+            txtNombre.Margin = new Padding(4, 5, 4, 5);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(135, 27);
+            txtNombre.TabIndex = 104;
+            // 
+            // txtDireccion
+            // 
+            txtDireccion.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtDireccion.Location = new Point(127, 103);
+            txtDireccion.Margin = new Padding(4, 5, 4, 5);
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new Size(333, 52);
+            txtDireccion.TabIndex = 103;
+            txtDireccion.Text = "";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.FromArgb(242, 244, 243);
+            label8.Location = new Point(11, 103);
+            label8.Name = "label8";
+            label8.Size = new Size(88, 21);
+            label8.TabIndex = 102;
+            label8.Text = "Dirección";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.FromArgb(242, 244, 243);
+            label6.Location = new Point(494, 103);
+            label6.Name = "label6";
+            label6.Size = new Size(55, 21);
+            label6.TabIndex = 99;
+            label6.Text = "Edad";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.FromArgb(242, 244, 243);
+            label5.Location = new Point(494, 43);
+            label5.Name = "label5";
+            label5.Size = new Size(80, 21);
+            label5.TabIndex = 97;
+            label5.Text = "Teléfono";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(242, 244, 243);
+            label3.Location = new Point(271, 43);
+            label3.Name = "label3";
+            label3.Size = new Size(78, 21);
+            label3.TabIndex = 95;
+            label3.Text = "Apellido";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.FromArgb(242, 244, 243);
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox2.Location = new Point(371, 176);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(41, 42);
+            pictureBox2.TabIndex = 67;
+            pictureBox2.TabStop = false;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FlatStyle = FlatStyle.Flat;
+            comboBox2.Font = new Font("Century Gothic", 12.22642F);
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(135, 180);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(210, 31);
+            comboBox2.TabIndex = 66;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.FromArgb(242, 244, 243);
+            label10.Location = new Point(7, 182);
+            label10.Name = "label10";
+            label10.Size = new Size(103, 21);
+            label10.TabIndex = 65;
+            label10.Text = "Buscar por:";
+            // 
+            // txtUser
+            // 
+            txtUser.BorderStyle = BorderStyle.None;
+            txtUser.Font = new Font("Century Gothic", 12.22642F);
+            txtUser.Location = new Point(1103, 45);
+            txtUser.Name = "txtUser";
+            txtUser.Size = new Size(203, 25);
+            txtUser.TabIndex = 29;
+            // 
+            // txtPassword
+            // 
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.Font = new Font("Century Gothic", 12.22642F);
+            txtPassword.Location = new Point(1103, 102);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(219, 25);
+            txtPassword.TabIndex = 23;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(242, 244, 243);
+            label2.Location = new Point(11, 46);
+            label2.Name = "label2";
+            label2.Size = new Size(77, 21);
+            label2.TabIndex = 1;
+            label2.Text = "Nombre";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Location = new Point(741, 115);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(136, 107);
+            pictureBox1.TabIndex = 28;
+            pictureBox1.TabStop = false;
             // 
             // frmRegistro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 501);
-            this.Controls.Add(this.panel1);
-            this.Name = "frmRegistro";
-            this.Text = "frmRegistro";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgMostrarProveedor)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1633, 771);
+            Controls.Add(panel1);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "frmRegistro";
+            Text = "frmRegistro";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgEmpleados).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -504,36 +663,51 @@ namespace ProyectoDS
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dgMostrarProveedor;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox txtNombreProveedor;
-        private System.Windows.Forms.RichTextBox txtDireccionProveedor;
+        private System.Windows.Forms.DataGridView dgEmpleados;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.RichTextBox txtDireccion;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewImageColumn _editar;
-        private System.Windows.Forms.DataGridViewImageColumn _eliminar;
+        private GroupBox groupBox2;
+        private Label label7;
+        private PictureBox pictureBox9;
+        private TextBox textBox8;
+        private TextBox textBox9;
+        private Label label13;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private TextBox txtEdad;
+        private TextBox txtPassword;
+        private GroupBox groupBox3;
+        private RadioButton rbColasSimples;
+        private RadioButton rbPilas;
+        private Label label4;
+        private TextBox textBox3;
+        private TextBox textBox5;
+        private PictureBox pictureBox4;
+        private Button btnEliminar;
+        private Button btnNuevo;
+        private RadioButton rbColasCirculares;
+        private GroupBox groupBox4;
+        private Label label9;
+        private TextBox textBox6;
+        private TextBox textBox7;
+        private Label label11;
+        private TextBox txtCantidad;
+        private Button btnInicio;
+        private Label label12;
     }
 }
